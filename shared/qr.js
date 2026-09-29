@@ -1,0 +1,1 @@
+document.querySelector('#print-qr').onclick=()=>window.print();document.querySelector('#copy-url').onclick=async()=>{const i=document.querySelector('#qr-url'),s=document.querySelector('#copy-status');try{await navigator.clipboard.writeText(i.value);s.textContent='تم نسخ الرابط'}catch(e){i.focus();i.select();s.textContent='الرابط محدد؛ انسخه من جهازك'}};
